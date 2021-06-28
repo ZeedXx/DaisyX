@@ -37,4 +37,4 @@ bredis = redis_lib.Redis(
 try:
     redis.ping()
 except redis_lib.ConnectionError:
-    sys.exit(log.critical("Can't connect to RedisDB! Exiting..."))
+    sys.exit(log.critical("Can't Connect To RedisDB! Exiting..."))
