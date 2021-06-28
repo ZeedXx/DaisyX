@@ -2,9 +2,9 @@
 echo "
 *********** STARTING DEPLOY ***********
 
-DAISYX v2 -Base Aiogram
-(C) 2020-2021 by @TEAMDAISYX
-Support Chat is @DAISYSUPPORT_OFFICIAL.
+Zeed Robot - Base Aiogram
+(C) 2020-2021 by @Reeeeeezy.
+Subscribe Channel on @Rezy_IsBack.
 
 ***************************************
 "
@@ -30,17 +30,17 @@ ech_final () {
     echo "
     
 =++---------------------------------------------++=
-DAISYX. Deployed Successfully
+Zeed Robot. Deployed Successfully
 
  ***************************
- * |D| |A| |I| |S| |Y| |X| *
- ******************* v2.0 ** 
+ * |!| |Z| |e| |e| |d| |!| *
+ ******************* Zeed ** 
 
-Thanks for deploying DaisyX
-(C) 2020-2021 by @TEAMDAISYX
-Support Chat is @DAISYSUPPORT_OFFICIAL.
+Thanks For Deploying Zeed Robot.
+(C) 2020-2021 by @Reeeeeezy.
+Subscribe Channel on @Rezy_IsBack.
 =++---------------------------------------------++=
-                       Greetings from dev team :)
+                       Greetings From Zeed :)
     "
 }
 
