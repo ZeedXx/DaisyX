@@ -99,13 +99,13 @@ class UserRestricting(Filter):
                     strings["user_no_right"].format(permission=required_permissions)
                 )
             except BadRequest as error:
-                if error.args == "Reply message not found":
+                if error.args == "Reply Message Not Found":
                     return await message.answer(strings["user_no_right"])
         else:
             try:
                 await task(strings["user_no_right:not_admin"])
             except BadRequest as error:
-                if error.args == "Reply message not found":
+                if error.args == "Reply Message Not Found":
                     return await message.answer(strings["user_no_right:not_admin"])
 
 
@@ -138,13 +138,13 @@ class BotHasPermissions(UserRestricting):
                     strings["bot_no_right"].format(permission=required_permissions)
                 )
             except BadRequest as error:
-                if error.args == "Reply message not found":
+                if error.args == "Reply Message Not Found":
                     return await message.answer(strings["bot_no_right"])
         else:
             try:
                 await message.reply(strings["bot_no_right:not_admin"])
             except BadRequest as error:
-                if error.args == "Reply message not found":
+                if error.args == "Reply Message Not Found":
                     return await message.answer(strings["bot_no_right:not_admin"])
 
 
