@@ -27,7 +27,7 @@ from DaisyX.utils.logger import log
 from DaisyX.versions import DAISY_VERSION
 
 log.info("----------------------")
-log.info("|      Daisy X      |")
+log.info("|     Zeed Robot    |")
 log.info("----------------------")
 log.info("Version: " + DAISY_VERSION)
 
@@ -35,7 +35,7 @@ if get_bool_key("DEBUG_MODE") is True:
     DAISY_VERSION += "-debug"
     log.setLevel(logging.DEBUG)
     log.warn(
-        "! Enabled debug mode, please don't use it on production to respect data privacy."
+        "! Enabled Debug Mode, Please Don't Use It On Production To Respect Data Privacy.!"
     )
 
 TOKEN = get_str_key("TOKEN", required=True)
