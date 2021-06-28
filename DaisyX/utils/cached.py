@@ -87,7 +87,7 @@ class cached:
         >>> Arg = ... # Same Thing ^^
         >>> await somefunction.reset_cache(arg, new_value='Something')
 
-        :param new_value: new/ updated value to be set [optional]
+        :Param new_value: New / Updated Value To Be Set [Optional]
         """
 
         key = self.__build_key(*args, **kwargs)
