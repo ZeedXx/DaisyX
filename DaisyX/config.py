@@ -45,7 +45,7 @@ if os.path.isfile(CONFIG_PATH):
     ):
         DEFAULTS[item.upper()] = data[item]
 else:
-    log.info("Using env vars")
+    log.info("Using Env Vars")
 
 
 def get_str_key(name, required=False):
@@ -54,10 +54,10 @@ def get_str_key(name, required=False):
     else:
         default = None
     if not (data := env.str(name, default=default)) and not required:
-        log.warn("No str key: " + name)
+        log.warn("No Str key: " + name)
         return None
     elif not data:
-        log.critical("No str key: " + name)
+        log.critical("No Str Key: " + name)
         sys.exit(2)
     else:
         return data
@@ -69,10 +69,10 @@ def get_int_key(name, required=False):
     else:
         default = None
     if not (data := env.int(name, default=default)) and not required:
-        log.warn("No int key: " + name)
+        log.warn("No Int Key: " + name)
         return None
     elif not data:
-        log.critical("No int key: " + name)
+        log.critical("No Int Key: " + name)
         sys.exit(2)
     else:
         return data
@@ -84,10 +84,10 @@ def get_list_key(name, required=False):
     else:
         default = None
     if not (data := env.list(name, default=default)) and not required:
-        log.warn("No list key: " + name)
+        log.warn("No List Key: " + name)
         return []
     elif not data:
-        log.critical("No list key: " + name)
+        log.critical("No List Key: " + name)
         sys.exit(2)
     else:
         return data
@@ -99,10 +99,10 @@ def get_bool_key(name, required=False):
     else:
         default = None
     if not (data := env.bool(name, default=default)) and not required:
-        log.warn("No bool key: " + name)
+        log.warn("No Bool Key: " + name)
         return False
     elif not data:
-        log.critical("No bool key: " + name)
+        log.critical("No Bool Key: " + name)
         sys.exit(2)
     else:
         return data
