@@ -79,12 +79,12 @@ class cached:
 
     async def reset_cache(self, *args, new_value=None, **kwargs):
         """
-        >>> @cached()
-        >>> def somefunction(arg):
-        >>>     pass
+        >>> @Cached()
+        >>> Def Somefunction(arg):
+        >>>     Pass
         >>>
         >>> [...]
-        >>> arg = ... # same thing ^^
+        >>> Arg = ... # Same Thing ^^
         >>> await somefunction.reset_cache(arg, new_value='Something')
 
         :param new_value: new/ updated value to be set [optional]
