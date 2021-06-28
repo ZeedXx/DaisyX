@@ -26,10 +26,10 @@ def exit_gracefully(signum, frame):
     try:
         redis.save()
     except Exception:
-        log.error("Exiting immediately!")
+        log.error("Exiting Immediately!")
     os.kill(os.getpid(), signal.SIGUSR1)
 
 
 # Signal exit
-log.info("Setting exit_gracefully task...")
+log.info("Setting exit_gracefully Task...")
 signal.signal(signal.SIGINT, exit_gracefully)
