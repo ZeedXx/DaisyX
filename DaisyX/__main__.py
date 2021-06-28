@@ -26,7 +26,7 @@ from DaisyX.modules import ALL_MODULES, LOADED_MODULES, MOD_HELP
 from DaisyX.utils.logger import log
 
 if get_bool_key("DEBUG_MODE"):
-    log.debug("Enabling logging middleware.")
+    log.debug("Enabling Logging Middleware.")
     dp.middleware.setup(LoggingMiddleware())
 
 LOAD = get_list_key("LOAD")
@@ -40,7 +40,7 @@ if get_bool_key("LOAD_MODULES"):
 
     modules = [x for x in modules if x not in DONT_LOAD]
 
-    log.info("Modules to load: %s", str(modules))
+    log.info("Modules To Load: %s", str(modules))
     for module_name in modules:
         # Load pm_menu at last
         if module_name == "pm_menu":
@@ -53,7 +53,7 @@ if get_bool_key("LOAD_MODULES"):
             else:
                 MOD_HELP[imported_module.__name__] = imported_module.__help__
         LOADED_MODULES.append(imported_module)
-    log.info("Modules loaded!")
+    log.info("Modules Loaded!")
 else:
     log.warning("Not importing modules!")
 
@@ -77,7 +77,7 @@ async def start(_):
     loop.create_task(before_srv_task(loop))
 
     if not get_bool_key("DEBUG_MODE"):
-        log.debug("Waiting 2 seconds...")
+        log.debug("Waiting 2 Seconds...")
         await asyncio.sleep(2)
 
 
@@ -87,8 +87,8 @@ async def start_webhooks(_):
     return await start(_)
 
 
-log.info("Starting loop..")
-log.info("Aiogram: Using polling method")
+log.info("Starting Loop..")
+log.info("Aiogram: Using Polling Method")
 
 if os.getenv("WEBHOOKS", False):
     port = os.getenv("WEBHOOKS_PORT", 8080)
