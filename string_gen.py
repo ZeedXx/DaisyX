@@ -26,6 +26,6 @@ with client:
     session_str = client.session.save()
     client.send_message("me", f"`{session_str}`")
     client.send_message(
-        "THIS IS YOUR STRING SESSION \nJoin @DaisySupport_Official For More Support."
+        "THIS IS YOUR STRING SESSION. \nSubscribe Channel @Rezy_IsBack To Support.\nThanks."
     )
     print("⬆ Please Check Your Telegram Saved Message For Your String.")
