@@ -5,66 +5,66 @@ language_info:
 STRINGS:
   notes:
     #/save
-    note_saved: "🗒 Catatan <code>{note_name}</code> tersimpan di <b>{chat_title}</b>!"
-    note_updated: "🗒 Catatan <code>{note_name}</code> diperbarui di <b>{chat_title}</b>!"
-    you_can_get_note: "\nAnda dapat mengambil catatan ini dengan menggunakan <code>/get {note_name}</code>, atau <code>{note_name}</code>"
+    note_saved: "🗒 Catatan <code>{note_name}</code> Tersimpan Di <b>{chat_title}</b>!"
+    note_updated: "🗒 Catatan <code>{note_name}</code> Diperbarui Di <b>{chat_title}</b>!"
+    you_can_get_note: "\nAnda Dapat Mengambil Catatan Ini Dengan Menggunakan <code>/get {note_name}</code>, Atau <code>{note_name}</code>"
     #Translator note: please keep sure that you don't have space in the end of string
-    note_aliases: "\nAlias catatan:"
-    blank_note: "Menyimpan catatan kosong tidak diizinkan!"
-    notename_cant_contain: "Nama catatan tidak boleh mengandung \"<code>{symbol}</code>\"!"
+    note_aliases: "\nAlias Catatan:"
+    blank_note: "Menyimpan Catatan Kosong Tidak Diizinkan!"
+    notename_cant_contain: "Nama Catatan Tidak Boleh Mengandung \"<code>{symbol}</code>\"!"
     #/get
-    cant_find_note: Saya tidak dapat menemukan catatan ini di <b>{chat_name}</b>!
-    no_note: "Tidak dapat menemukan catatan tersebut."
-    no_notes_pattern: "Tidak ada catatan ditemukan dengan pola <code>%s</code>"
-    u_mean: "\nMungkin maksud anda <code>#{note_name}</code>?"
+    cant_find_note: Saya Tidak Dapat Menemukan Catatan Ini Di <b>{chat_name}</b>!
+    no_note: "Tidak Dapat Menemukan Catatan Tersebut."
+    no_notes_pattern: "Tidak Ada Catatan Ditemukan Dengan Pola <code>%s</code>"
+    u_mean: "\nMungkin Maksud Anda <code>#{note_name}</code>?"
     #/notes
-    notelist_no_notes: "Tidak ada catatan apapun di <b>{chat_title}</b>!"
-    notelist_header: "<b>Catatan di {chat_name}</b>:"
-    notes_in_private: "Tekan tombol dibawah untuk mendapatkan daftar catatan."
+    notelist_no_notes: "Tidak Ada Catatan Apapun Di <b>{chat_title}</b>!"
+    notelist_header: "<b>Catatan Di {chat_name}</b>:"
+    notes_in_private: "Tekan Tombol Dibawah Untuk Mendapatkan Daftar Catatan."
     notelist_search: |
       <b>Pola:</b> <code>{request}</code>
       <b>Catatan yang cocok:</b>
     #/clear
-    note_removed: "Catatan <code>#{note_name}</code> dihapus di <b>{chat_name}</b>!"
+    note_removed: "Catatan <code>#{note_name}</code> Dihapus Di <b>{chat_name}</b>!"
     note_removed_multiple: |
-      Beberapa catatan dihapus di <b>{chat_name}</b>
+      Beberapa Catatan Dihapus Di <b>{chat_name}</b>
       <b>Dihapus:</b><code>{removed}</code>
-    not_removed_multiple: "<b>Tidak dihapus:</b><code>{not_removed}</code>"
+    not_removed_multiple: "<b>Tidak Dihapus:</b><code>{not_removed}</code>"
     #/clearall
-    clear_all_text: "Ini akan menghapus seluruh catatan dari {chat_name}. Apakah anda yakin?"
-    clearall_btn_yes: "Ya. Hapus semua catatan saya!"
+    clear_all_text: "Ini Akan Menghapus Seluruh Catatan Dari {chat_name}. Apakah Anda Yakin?"
+    clearall_btn_yes: "Ya. Hapus Semua Catatan Saya!"
     clearall_btn_no: "Tidak!"
-    clearall_done: "Seluruh (<code>{num}</code>) catatan di {chat_name} telah dihapus!"
+    clearall_done: "Seluruh (<code>{num}</code>) Catatan Di {chat_name} Telah Dihapus!"
     #/search
     search_header: |
-      <b>Permintaan pencarian di {chat_name}</b>:
+      <b>Permintaan Pencarian Di {chat_name}</b>:
       <b>Pola:</b> <code>{request}</code>
-      <b>Catatan yang cocok:</b>
+      <b>Catatan Yang Cocok:</b>
     #/noteinfo
-    note_info_title: "<b>Informasi catatan</b>\n"
-    note_info_note: "Nama catatan: %s\n"
-    note_info_content: "Isi catatan: %s\n"
-    note_info_parsing: "Mode penguraian: <code>%s</code>\n"
-    note_info_created: "Telah dibuat pada: <code>{date}</code> oleh {user}\n"
-    note_info_updated: "Terakhir diperbarui pada: <code>{date}</code> oleh {user}\n"
-    user_blocked: "Tulis /start di percakapan pribadi dengan saya!"
+    note_info_title: "<b>Informasi Catatan</b>\n"
+    note_info_note: "Nama Catatan: %s\n"
+    note_info_content: "Isi Catatan: %s\n"
+    note_info_parsing: "Mode Penguraian: <code>%s</code>\n"
+    note_info_created: "Telah Dibuat Pada: <code>{date}</code> Oleh {user}\n"
+    note_info_updated: "Terakhir Diperbarui Pada: <code>{date}</code> Oleh {user}\n"
+    user_blocked: "Tulis /start Di Percakapan Pribadi Dengan Saya!"
     #/privatenotes
-    private_notes_false_args: "Anda memiliki 2 opsi <code>Nonaktifkan</code> dan <code> Aktifkan</code>!"
-    already_enabled: "Catatan pribadi sudah diaktifkan di %s"
-    current_state_info: "Catatan pribadi saat ini <code>{state}</code> di <b>{chat}</b>!"
-    enabled_successfully: "Catatan pribadi telah berhasil <b>Diaktifkan</b> di %s!"
-    disabled_successfully: "Catatan pribadi telah berhasil <b>Dinonaktifkan</b> di %s!"
-    not_enabled: "Catatan pribadi tidak diaktifkan."
-    privatenotes_notif: "Anda telah berhasil terhubung ke catatan <b> {chat} </b>! Untuk memutuskan koneksi, gunakan perintah <code>/disconnect</code>!"
+    private_notes_false_args: "Anda Memiliki 2 Opsi <code>Nonaktifkan</code> Dan <code> Aktifkan</code>!"
+    already_enabled: "Catatan Pribadi Sudah Diaktifkan di %s"
+    current_state_info: "Catatan Pribadi Saat Ini <code>{state}</code> Di <b>{chat}</b>!"
+    enabled_successfully: "Catatan Pribadi Telah Berhasil <b>Diaktifkan</b> Di %s!"
+    disabled_successfully: "Catatan Pribadi Telah Berhasil <b>Dinonaktifkan</b> Di %s!"
+    not_enabled: "Catatan Pribadi Tidak Diaktifkan."
+    privatenotes_notif: "Anda Telah Berhasil Terhubung Ke Catatan <b> {chat} </b>! Untuk Memutuskan Koneksi, Gunakan Perintah <code>/disconnect</code>!"
     enabled: 'Aktif'
     disabled: 'Nonaktif'
     #/cleannotes
-    clean_notes_enable: "Berhasil mengaktifkan pembersihan catatan di <b>{chat_name}</b>"
-    clean_notes_disable: "Berhasil menonaktifkan pembersihan catatan di <b>{chat_name}</b>"
-    clean_notes_enabled: "Pembersihan catatan saat ini <b>aktif</b> di <b>{chat_name}</b>"
-    clean_notes_disabled: "Pembersihan catatan saat ini <b>nonaktif</b> di <b>{chat_name}</b>"
+    clean_notes_enable: "Berhasil Mengaktifkan Pembersihan Catatan Di <b>{chat_name}</b>"
+    clean_notes_disable: "Berhasil Menonaktifkan Pembersihan Catatan Di <b>{chat_name}</b>"
+    clean_notes_enabled: "Pembersihan Catatan Saat Ini <b>aktif</b> Di <b>{chat_name}</b>"
+    clean_notes_disabled: "Pembersihan Catatan Saat Ini <b>nonaktif</b> Di <b>{chat_name}</b>"
     #Filter
-    filters_title: 'Kirim sebuah catatan'
+    filters_title: 'Kirim Sebuah Catatan'
     filters_setup_start: 'Mohon untuk mengirim sebuah nama catatan.'
   #delmsg_no_arg: "deletemsg button can contain only 'admin' or 'user' argument!"
   #bot_msg: "I'm sorry, I am not able to get this message, probably this a other bot's message, so I can't save it."
