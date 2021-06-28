@@ -55,7 +55,7 @@ if get_bool_key("LOAD_MODULES"):
         LOADED_MODULES.append(imported_module)
     log.info("Modules Loaded!")
 else:
-    log.warning("Not importing modules!")
+    log.warning("Not Importing Modules!")
 
 loop = asyncio.get_event_loop()
 
@@ -68,12 +68,12 @@ if not get_bool_key("DEBUG_MODE"):
 
 async def before_srv_task(loop):
     for module in [m for m in LOADED_MODULES if hasattr(m, "__before_serving__")]:
-        log.debug("Before serving: " + module.__name__)
+        log.debug("Before Serving: " + module.__name__)
         loop.create_task(module.__before_serving__(loop))
 
 
 async def start(_):
-    log.debug("Starting before serving task for all modules...")
+    log.debug("Starting Before Serving Task For All Modules...")
     loop.create_task(before_srv_task(loop))
 
     if not get_bool_key("DEBUG_MODE"):
