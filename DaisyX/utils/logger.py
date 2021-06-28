@@ -47,4 +47,4 @@ logger.add(
     diagnose=True,
     level="INFO",
 )
-log.info("Enabled logging intro daisy.log file.")
+log.info("Enabled Logging Intro Zeed.log File.")
