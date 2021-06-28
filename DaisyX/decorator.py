@@ -35,7 +35,7 @@ REGISTRED_COMMANDS = []
 COMMANDS_ALIASES = {}
 
 # Import filters
-log.info("Filters to load: %s", str(ALL_FILTERS))
+log.info("Filters To Load: %s", str(ALL_FILTERS))
 for module_name in ALL_FILTERS:
     log.debug("Importing " + module_name)
     imported_module = import_module("DaisyX.utils.filters." + module_name)
@@ -59,7 +59,7 @@ def register(*args, cmds=None, f=None, allow_edited=True, allow_kwargs=False, **
 
         for idx, cmd in enumerate(cmds):
             if cmd in REGISTRED_COMMANDS:
-                log.warn(f"Duplication of /{cmd} command")
+                log.warn(f"Duplication Of /{cmd} Command")
             REGISTRED_COMMANDS.append(cmd)
             regex += cmd
 
