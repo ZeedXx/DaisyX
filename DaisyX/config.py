@@ -35,7 +35,7 @@ DEFAULTS = {
 
 CONFIG_PATH = "data/bot_conf.yaml"
 if os.name == "nt":
-    log.debug("Detected Windows, changing config path...")
+    log.debug("Detected Windows, Changing Config Path...")
     CONFIG_PATH = os.getcwd() + "\\data\\bot_conf.yaml"
 
 if os.path.isfile(CONFIG_PATH):
