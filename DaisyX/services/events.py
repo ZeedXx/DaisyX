@@ -73,7 +73,7 @@ def register(**args):
 
 
 def chataction(**args):
-    """Registers chat actions."""
+    """Registers Chat Actions."""
 
     def decorator(func):
         tbot.add_event_handler(func, events.ChatAction(**args))
@@ -83,7 +83,7 @@ def chataction(**args):
 
 
 def userupdate(**args):
-    """Registers user updates."""
+    """Registers User Updates."""
 
     def decorator(func):
         tbot.add_event_handler(func, events.UserUpdate(**args))
@@ -93,7 +93,7 @@ def userupdate(**args):
 
 
 def inlinequery(**args):
-    """Registers inline query."""
+    """Registers Inline Query."""
     pattern = args.get("pattern", None)
 
     if pattern is not None and not pattern.startswith("(?i)"):
@@ -107,7 +107,7 @@ def inlinequery(**args):
 
 
 def callbackquery(**args):
-    """Registers inline query."""
+    """Registers Inline Query."""
 
     def decorator(func):
         tbot.add_event_handler(func, events.CallbackQuery(**args))
