@@ -61,7 +61,7 @@ class cached:
         if result is None:
             result = _NotSet()
         asyncio.ensure_future(set_value(key, result, ttl=self.ttl))
-        log.debug(f"Cached: writing new data for key - {key}")
+        log.debug(f"Cached: Writing New data For Key - {key}")
         return result if type(result) is not _NotSet else result.real_value
 
     def __build_key(self, *args: dict, **kwargs: dict) -> str:
