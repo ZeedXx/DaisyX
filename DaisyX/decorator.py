@@ -39,7 +39,7 @@ log.info("Filters to load: %s", str(ALL_FILTERS))
 for module_name in ALL_FILTERS:
     log.debug("Importing " + module_name)
     imported_module = import_module("DaisyX.utils.filters." + module_name)
-log.info("Filters loaded!")
+log.info("Filters Loaded!")
 
 
 def register(*args, cmds=None, f=None, allow_edited=True, allow_kwargs=False, **kwargs):
